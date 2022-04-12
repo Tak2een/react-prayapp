@@ -19,11 +19,12 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 20,
+    paddingTop: '5%',
+    paddingHorizontal: '5%',
   },
   buttonMake: {
     width: '46%',
-    height: '60%',
+    height: '50%',
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
@@ -37,14 +38,13 @@ const styles = StyleSheet.create({
   },
   buttonGo: {
     width: '46%',
-    height: '60%',
+    height: '50%',
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
-    backgroundColor: '#ffffff',
     shadowOpacity: 0.25,
     shadowOffset: {width: 2, height: 4},
-    borderRadius: '6dp',
+    borderRadius: 6,
     backgroundColor: '#FFEBAA',
   },
 });
