@@ -25,7 +25,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import PrayingAloneView from './src/view/PrayingAlone/PrayingAloneView.js';
+import MainView from './src/view/PrayingAloneView/MainView/MainView.js';
+import ListView from './src/view/PrayingAloneView/ListView/ListView.js';
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -62,7 +63,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <PrayingAloneView />
+      <MainView />
     </SafeAreaView>
   );
 };
