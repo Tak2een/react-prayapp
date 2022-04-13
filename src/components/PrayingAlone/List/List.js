@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 
 const List = () => {
   return (
-    <SafeAreaView>
+    <View>
       <Title text="혼자 기도" width={95} />
       <View style={styles.Wrapper}>
         <View style={styles.Container}>
@@ -79,7 +79,7 @@ const List = () => {
           <ListCard main={55} sub={100} />
         </View>
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 };
 

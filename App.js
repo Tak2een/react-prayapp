@@ -27,6 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import MainView from './src/view/PrayingAloneView/MainView/MainView.js';
 import ListView from './src/view/PrayingAloneView/ListView/ListView.js';
+import TodayListView from './src/view/PrayingAloneView/TodayListView/TodayListView.js';
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -63,7 +64,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <MainView />
+      <TodayListView />
     </SafeAreaView>
   );
 };
