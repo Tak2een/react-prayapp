@@ -28,6 +28,7 @@ import {
 import MainView from './src/view/PrayingAloneView/MainView/MainView.js';
 import ListView from './src/view/PrayingAloneView/ListView/ListView.js';
 import TodayListView from './src/view/PrayingAloneView/TodayListView/TodayListView.js';
+import TodayExplanationView from './src/view/PrayingAloneView/TodayExplanationView/TodayExplanationView.js';
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -64,7 +65,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <TodayListView />
+      <TodayExplanationView />
     </SafeAreaView>
   );
 };
