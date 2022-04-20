@@ -23,7 +23,7 @@ const App = () => {
       {/* <Search /> */}
       {/* <Post /> */}
       {/* <Comment /> */}
-      <Write />
+      <Write />/
     </SafeAreaView>
   );
 };
