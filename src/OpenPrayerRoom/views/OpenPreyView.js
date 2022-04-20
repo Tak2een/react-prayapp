@@ -1,14 +1,20 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import OpenPreyList from '../components/OpenPreyList';
 import roomDataMock from '../mocks/roomDataMock';
 
 const OpenPreyView = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <OpenPreyList roomData={roomDataMock} />
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default OpenPreyView;
