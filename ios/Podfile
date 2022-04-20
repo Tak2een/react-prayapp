@@ -25,13 +25,6 @@ target 'SampleApp' do
 
   post_install do |installer|
     react_native_post_install(installer)
-    installer.pods_project.build_configurations.each do |config|
-      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
-    end
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
-      end
-    end 
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
 end
