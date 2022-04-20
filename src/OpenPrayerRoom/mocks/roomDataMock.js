@@ -1,0 +1,73 @@
+export default [
+  {
+    key: '1',
+    room_type: 'any_time',
+    title: '자유롭게 기도에 참가하세요',
+    subtitle: '24시간 기도방',
+    personnel: 10,
+  },
+  {
+    key: '2',
+    room_type: 'normal',
+    title: '기도명',
+    subtitle: 'N일기도 (감사기도)',
+    startTime: '00:00 AM',
+    endTime: '00:00 AM',
+    position: '성당 / 지역 / 주체자명',
+    personnel: 10,
+  },
+  {
+    key: '3',
+    room_type: 'normal',
+    title: '기도명',
+    subtitle: 'N일기도 (감사기도)',
+    startTime: '00:00 AM',
+    endTime: '00:00 AM',
+    position: '성당 / 지역 / 주체자명',
+    personnel: 10,
+  },
+
+  {
+    key: '14',
+    room_type: 'normal',
+    title: '기도명',
+    subtitle: 'N일기도 (감사기도)',
+    startTime: '00:00 AM',
+    endTime: '00:00 AM',
+    position: '성당 / 지역 / 주체자명',
+    personnel: 10,
+  },
+
+  {
+    key: '16',
+    room_type: 'normal',
+    title: '기도명',
+    subtitle: 'N일기도 (감사기도)',
+    startTime: '00:00 AM',
+    endTime: '00:00 AM',
+    position: '성당 / 지역 / 주체자명',
+    personnel: 10,
+  },
+
+  {
+    key: '1123',
+    room_type: 'normal',
+    title: '기도명',
+    subtitle: 'N일기도 (감사기도)',
+    startTime: '00:00 AM',
+    endTime: '00:00 AM',
+    position: '성당 / 지역 / 주체자명',
+    personnel: 10,
+  },
+
+  {
+    key: '1534',
+    room_type: 'normal',
+    title: '기도명',
+    subtitle: 'N일기도 (감사기도)',
+    startTime: '00:00 AM',
+    endTime: '00:00 AM',
+    position: '성당 / 지역 / 주체자명',
+    personnel: 10,
+  },
+];
