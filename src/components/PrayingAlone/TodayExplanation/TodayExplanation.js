@@ -4,6 +4,9 @@ import Explanation from '../assets/img/explanation.png';
 import Title from '../common/Title/Title';
 
 const Styles = StyleSheet.create({
+  MainContainer: {
+    height: '100%',
+  },
   Container: {
     alignItems: 'center',
     width: '100%',
@@ -44,7 +47,7 @@ const Styles = StyleSheet.create({
 
 const TodayExplanation = () => {
   return (
-    <View>
+    <View style={Styles.MainContainer}>
       <Title text="묵주기도 설명서" width={146} />
       <View style={Styles.Container}>
         <View style={Styles.Wrapper}>

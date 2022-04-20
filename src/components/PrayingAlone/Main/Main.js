@@ -5,6 +5,9 @@ import Button from '../common/Button/Button';
 import Title from '../common/Title/Title';
 
 const styles = StyleSheet.create({
+  Wrapper: {
+    height: '100%',
+  },
   mainImg: {
     width: 100,
     height: 100,
@@ -19,7 +22,7 @@ const styles = StyleSheet.create({
 
 const Main = () => {
   return (
-    <View>
+    <View style={styles.Wrapper}>
       <Title text="혼자 기도" width={95} />
       <View style={styles.Container}>
         <Image source={mainImg} style={styles.mainImg} />
