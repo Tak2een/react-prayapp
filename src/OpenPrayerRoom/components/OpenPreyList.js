@@ -21,6 +21,7 @@ const OpenPreyList = ({roomData}) => {
         <OpenPreyFilterBox />
         <ScrollView>{mapRoomList}</ScrollView>
       </View>
+
       <Modal
         title="입장 불가"
         content="기도 시작 10분 전까지 입장이 가능합니다."

@@ -35,7 +35,7 @@ const OpenPreyItem = ({roomData, touchCallback}) => {
         roomData;
 
       return (
-        <TouchableNativeFeedback onPress={touchCallback}>
+        <View>
           <View style={styles.normalType.container}>
             <Text style={styles.normalType.title}>{title}</Text>
             <Text style={styles.normalType.time}>
@@ -48,11 +48,13 @@ const OpenPreyItem = ({roomData, touchCallback}) => {
             </View>
 
             <Text style={styles.normalType.subTitle}>{subtitle}</Text>
-            <TouchableOpacity style={styles.normalType.button}>
-              <Text>확인</Text>
+            <TouchableOpacity
+              style={styles.normalType.button}
+              onPress={touchCallback}>
+              <Text>참여하기</Text>
             </TouchableOpacity>
           </View>
-        </TouchableNativeFeedback>
+        </View>
       );
     default:
       throw new Error('Unhandled room type');
@@ -97,7 +99,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       paddingVertical: 15,
       borderRadius: 10,
-      borderWidth: 3,
+      borderWidth: 1,
       borderColor: '#FFBD00',
       backgroundColor: '#fff',
     },
@@ -139,6 +141,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center',
       fontWeight: 'bold',
+      borderRadius: 4,
       color: '#fff',
     },
   },
