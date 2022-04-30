@@ -21,10 +21,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingTop: '5%',
     paddingHorizontal: '5%',
+    marginBottom: 20,
   },
   buttonMake: {
     width: '46%',
-    height: '50%',
+    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
   },
   buttonGo: {
     width: '46%',
-    height: '50%',
+    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
