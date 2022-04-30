@@ -14,10 +14,6 @@ const JointPrayerItemList = props => {
   );
 };
 
-const styles = StyleSheet.create({
-  scrollView: {
-    marginTop: -30,
-  },
-});
+const styles = StyleSheet.create({});
 
 export default JointPrayerItemList;

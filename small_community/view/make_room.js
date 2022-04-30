@@ -55,6 +55,7 @@ const MakeRoom = () => {
   };
 
   const prayer = ['환희의 신비'];
+  const prayerClassinfcation = ['전체', '청원의 기도', '감사의 기도'];
 
   return (
     <SafeAreaView>
@@ -122,9 +123,37 @@ const MakeRoom = () => {
             />
           </View>
         </View>
+        <View style={styles.rowView}>
+          <Text style={styles.font}>기도일수</Text>
+          <View style={styles.innerRowView}>
+            <SelectDropdown
+              data={prayer}
+              defaultValue={prayer[0]}
+              buttonTextStyle={{fontSize: 15, lineHeight: 18}}
+              buttonStyle={styles.selectBox}
+            />
+            <Text style={styles.font}>기도</Text>
+          </View>
+        </View>
+        <View style={styles.rowView}>
+          <Text style={styles.font}>기도 구분</Text>
+          <View style={styles.innerRowView}>
+            <SelectDropdown
+              data={prayerClassinfcation}
+              defaultValue={prayer[0]}
+              buttonTextStyle={{fontSize: 15, lineHeight: 18}}
+              buttonStyle={styles.selectBox}
+            />
+            <Text style={styles.font}>기도</Text>
+          </View>
+        </View>
 
         <Text style={styles.font}>비밀번호(선택)</Text>
         <TextInput style={styles.textInput}></TextInput>
+
+        <View style={styles.button}>
+          <Text style={styles.buttonFont}>방 생성하기</Text>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -154,6 +183,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 20,
   },
+  innerRowView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   rightRowView: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -176,6 +212,21 @@ const styles = StyleSheet.create({
     width: 104,
     height: 30,
     backgroundColor: '#F1F3F5',
+  },
+
+  button: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    height: '10%',
+    backgroundColor: '#CCCCCC',
+    borderRadius: 33,
+  },
+  buttonFont: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: '600',
+    lineHeight: 24,
   },
 });
 
