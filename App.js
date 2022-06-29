@@ -30,6 +30,7 @@ import ListView from './src/view/PrayingAloneView/ListView/ListView.js';
 import TodayListView from './src/view/PrayingAloneView/TodayListView/TodayListView.js';
 import TodayExplanationView from './src/view/PrayingAloneView/TodayExplanationView/TodayExplanationView.js';
 import CreatePrayView from './src/view/PrayingAloneView/CreatePray/CreatePrayView.js';
+import PrayView from './src/view/PrayingAloneView/PrayView/PrayView.js';
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -66,7 +67,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <CreatePrayView />
+      <PrayView />
     </SafeAreaView>
   );
 };
