@@ -5,12 +5,10 @@ import Button from '../common/Button/Button';
 import Title from '../common/Title/Title';
 
 const styles = StyleSheet.create({
-  Wrapper: {
-    height: '100%',
-  },
+  Wrapper: {},
   mainImg: {
     width: 100,
-    height: 100,
+    height: 80,
     resizeMode: 'contain',
     marginTop: 30,
   },

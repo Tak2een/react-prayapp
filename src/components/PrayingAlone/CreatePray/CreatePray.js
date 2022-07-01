@@ -68,7 +68,7 @@ const Styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 125,
+    marginTop: 90,
   },
   BtnText: {
     fontWeight: '600',

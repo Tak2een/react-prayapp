@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
   CardList: {
     alignItems: 'center',
   },
+  scrollView: {
+    height: 530,
+  },
 });
 
 const List = () => {
@@ -55,7 +58,7 @@ const List = () => {
           </TouchableOpacity>
         </View>
       </View>
-      <ScrollView>
+      <ScrollView style={styles.scrollView}>
         <View style={styles.CardList}>
           <ListCard main={10} sub={54} />
           <ListCard main={5} sub={9} />

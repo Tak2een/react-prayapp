@@ -5,7 +5,7 @@ import Title from '../common/Title/Title';
 
 const Styles = StyleSheet.create({
   MainContainer: {
-    height: '100%',
+    height: '81.5%',
   },
   Container: {
     alignItems: 'center',

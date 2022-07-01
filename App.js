@@ -67,7 +67,12 @@ const App = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <PrayView />
+      {/* <MainView /> */}
+      {/* <ListView /> */}
+      {/* <CreatePrayView /> */}
+      {/* <TodayListView /> */}
+      <TodayExplanationView />
+      {/* <PrayView /> */}
     </SafeAreaView>
   );
 };

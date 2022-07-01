@@ -27,6 +27,9 @@ const Styles = StyleSheet.create({
     // backgroundColor: 'black',
     // height: 160,
   },
+  ScrollView: {
+    height: 560,
+  },
 });
 
 const TodayList = () => {
@@ -38,7 +41,7 @@ const TodayList = () => {
           <Text style={Styles.SubTitleText}>묵주기도 설명서</Text>
         </View>
       </View>
-      <ScrollView>
+      <ScrollView style={Styles.ScrollView}>
         <View style={Styles.ListContainer}>
           <TodayCard />
           <TodayCard />
