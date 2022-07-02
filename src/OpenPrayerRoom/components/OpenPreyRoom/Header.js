@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 
-const Header = () => {
+const Header = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.out}>&#60;</Text>
+      <Text style={styles.out} onPress={() => navigation.goBack()}>
+        &#60;
+      </Text>
       <Text style={styles.title}>기도방</Text>
 
       <Text style={styles.status}>Live</Text>

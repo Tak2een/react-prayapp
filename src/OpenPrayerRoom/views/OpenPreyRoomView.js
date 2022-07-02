@@ -1,15 +1,15 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import Header from '../components/OpenPreyRoom/Header';
+import VideoPlayer from '../components/OpenPreyRoom/VideoPlayer';
+import Chat from '../components/OpenPreyRoom/Chat';
 
-const OpenPreyView = () => {
+const OpenPreyRoomView = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
-
-      {/* VideoPlayer */}
-
-      {/* Chat */}
+      <Header navigation={navigation} />
+      <VideoPlayer />
+      <Chat />
     </SafeAreaView>
   );
 };
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default OpenPreyView;
+export default OpenPreyRoomView;

@@ -1,13 +1,9 @@
 import React from 'react';
 
-// ANCHOR Open Prey List View
-import OpenPreyView from './src/OpenPrayerRoom/views/OpenPreyView';
-
-// ANCHOR Open Prey Room View
-import OpenPreyRoomView from './src/OpenPrayerRoom/views/OpenPreyRoomView';
+import Navigation from './Navigation';
 
 const App = () => {
-  return <OpenPreyRoomView />;
+  return <Navigation />;
 };
 
 export default App;

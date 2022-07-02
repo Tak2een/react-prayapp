@@ -3,10 +3,10 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 import OpenPreyList from '../components/OpenPreyList';
 import roomDataMock from '../mocks/roomDataMock';
 
-const OpenPreyView = () => {
+const OpenPreyView = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
-      <OpenPreyList roomData={roomDataMock} />
+      <OpenPreyList roomData={roomDataMock} navigation={navigation} />
     </SafeAreaView>
   );
 };

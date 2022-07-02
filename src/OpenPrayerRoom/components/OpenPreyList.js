@@ -4,14 +4,14 @@ import OpenPreyItem from './OpenPreyItem';
 import OpenPreyFilterBox from './OpenPreyFilterBox';
 import Modal from '../components/Modal';
 
-const OpenPreyList = ({roomData}) => {
-  const [open, setOpen] = React.useState(true);
+const OpenPreyList = ({roomData, navigation}) => {
+  const [open, setOpen] = React.useState(false);
 
   const mapRoomList = roomData.map((data, _) => (
     <OpenPreyItem
       roomData={data}
       key={data.key}
-      touchCallback={() => setOpen(true)}
+      touchCallback={() => navigation.navigate('OpenPreyerRosaryView')}
     />
   ));
 
