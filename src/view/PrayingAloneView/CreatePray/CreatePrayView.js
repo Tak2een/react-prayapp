@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const CreatePrayView = () => {
+const CreatePrayView = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
+      <Header navigation={navigation} />
       <CreatePray />
       <Footer />
     </SafeAreaView>

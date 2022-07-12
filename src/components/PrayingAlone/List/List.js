@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const List = () => {
+const List = ({navigation}) => {
   return (
     <View>
       <Title text="혼자 기도" width={95} />
@@ -60,26 +60,26 @@ const List = () => {
       </View>
       <ScrollView style={styles.scrollView}>
         <View style={styles.CardList}>
-          <ListCard main={10} sub={54} />
-          <ListCard main={5} sub={9} />
-          <ListCard main={7} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
-          <ListCard main={55} sub={100} />
+          <ListCard main={10} sub={54} navigation={navigation} />
+          <ListCard main={5} sub={9} navigation={navigation} />
+          <ListCard main={7} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
+          <ListCard main={55} sub={100} navigation={navigation} />
         </View>
       </ScrollView>
     </View>

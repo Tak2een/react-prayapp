@@ -96,7 +96,7 @@ const Styles = StyleSheet.create({
   },
 });
 
-const TodayCard = () => {
+const TodayCard = ({navigation}) => {
   const [showBtn, setShowBtn] = useState(false);
 
   return (
@@ -130,11 +130,23 @@ const TodayCard = () => {
       </View>
       {showBtn && (
         <View style={Styles.HiddenBtn}>
-          <TouchableOpacity style={Styles.Btn}>
-            <Text style={Styles.BtnText}>처음부터 시작하기</Text>
+          <TouchableOpacity
+            style={Styles.Btn}
+            onPress={() => navigation.navigate('Pray')}>
+            <Text
+              style={Styles.BtnText}
+              onPress={() => navigation.navigate('Pray')}>
+              처음부터 시작하기
+            </Text>
           </TouchableOpacity>
-          <TouchableOpacity style={Styles.Btn}>
-            <Text style={Styles.BtnText}>이어서 하기</Text>
+          <TouchableOpacity
+            style={Styles.Btn}
+            onPress={() => navigation.navigate('Pray')}>
+            <Text
+              style={Styles.BtnText}
+              onPress={() => navigation.navigate('Pray')}>
+              이어서 하기
+            </Text>
           </TouchableOpacity>
         </View>
       )}

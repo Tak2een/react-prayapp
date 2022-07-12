@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
   Title: {
     fontSize: 19,
-    fontWeight: 500,
+    fontWeight: '500',
   },
   SubView: {
     display: 'flex',
@@ -57,14 +57,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const Header = () => {
+const Header = ({navigation}) => {
   return (
     <View style={styles.HeaderView}>
       <View style={styles.TitleView}>
         <View style={styles.TitleImgView}>
           <Image style={styles.TitleImg} source={hand}></Image>
         </View>
-        <Text style={styles.Title}>혼자 기도</Text>
+        <Text style={styles.Title} onPress={() => navigation.navigate('Home')}>
+          혼자 기도
+        </Text>
       </View>
       <View style={styles.SubView}>
         <View style={styles.subImgView}>

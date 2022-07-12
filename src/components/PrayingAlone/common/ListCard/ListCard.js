@@ -94,7 +94,7 @@ const Styles = width =>
     },
   });
 
-const ListCard = ({main, sub}) => {
+const ListCard = ({main, sub, navigation}) => {
   const getWidthSize = (main, sub) => {
     const width = (main / sub) * 100;
     return width + '%';
@@ -123,9 +123,11 @@ const ListCard = ({main, sub}) => {
             <View style={Styles().ProgressBarSub}></View>
           </View>
         </View>
-        <View style={Styles().Button}>
+        <TouchableOpacity
+          style={Styles().Button}
+          onPress={() => navigation.navigate('Pray')}>
           <Text style={Styles().ButtonText}>신비명</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );

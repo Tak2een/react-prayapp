@@ -36,12 +36,12 @@ const styles = StyleSheet.create({
   },
   Text: {
     fontSize: 14,
-    fontWeight: 700,
+    fontWeight: '700',
     color: '#E0E0E0',
   },
   YText: {
     fontSize: 14,
-    fontWeight: 700,
+    fontWeight: '700',
     color: '#FFBD00',
   },
 });

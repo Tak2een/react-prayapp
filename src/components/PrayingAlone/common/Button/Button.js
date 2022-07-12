@@ -1,6 +1,14 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Button,
+  TouchableOpacity,
+} from 'react-native';
 import Vector from '../../assets/img/Vector.png';
+import {NavigateContext} from '../../../../view/PrayingAloneView/MainView/MainView';
 
 const styles = StyleSheet.create({
   DayContainer: {
@@ -37,17 +45,34 @@ const styles = StyleSheet.create({
   },
 });
 
-const Button = ({type, text}) => {
+const CustomButton = ({type, text, navigation, number}) => {
+  console.log(navigation);
   return type === 'true' ? (
-    <View style={styles.Container}>
-      <Text style={styles.text}>{text}</Text>
-    </View>
+    number ? (
+      <View style={styles.Container}>
+        <Button
+          color="#474747"
+          title={text}
+          onPress={() => navigation.navigate('Today')}
+        />
+      </View>
+    ) : (
+      <View style={styles.Container}>
+        <Button
+          color="#474747"
+          title={text}
+          onPress={() => navigation.navigate('List')}
+        />
+      </View>
+    )
   ) : (
     <View style={styles.DayContainer}>
       <Text style={styles.text}>{text}</Text>
-      <Image source={Vector} style={styles.Vector} />
+      <TouchableOpacity onPress={() => navigation.navigate('Create')}>
+        <Image source={Vector} style={styles.Vector} />
+      </TouchableOpacity>
     </View>
   );
 };
 
-export default Button;
+export default CustomButton;

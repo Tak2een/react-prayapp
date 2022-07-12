@@ -32,30 +32,32 @@ const Styles = StyleSheet.create({
   },
 });
 
-const TodayList = () => {
+const TodayList = ({navigation}) => {
   return (
     <View>
       <View style={Styles.Container}>
         <Title text="[100일기도/청원] 친구 건강" width={241} />
         <View style={Styles.SubTitle}>
-          <Text style={Styles.SubTitleText}>묵주기도 설명서</Text>
+          <Text
+            style={Styles.SubTitleText}
+            onPress={() => navigation.navigate('Explan')}>
+            묵주기도 설명서
+          </Text>
         </View>
       </View>
       <ScrollView style={Styles.ScrollView}>
         <View style={Styles.ListContainer}>
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
-          <TodayCard />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
+          <TodayCard navigation={navigation} />
         </View>
       </ScrollView>
     </View>

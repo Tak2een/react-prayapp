@@ -1,5 +1,12 @@
 import React from 'react';
-import {View, Image, Text, StyleSheet, ImageBackground} from 'react-native';
+import {
+  View,
+  Image,
+  Text,
+  StyleSheet,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
 import Title from '../common/Title/Title';
 import stop from '../assets/img/Stop.png';
 import play from '../assets/img/play.png';
@@ -28,12 +35,12 @@ const styles = width =>
     },
     PrayTitle: {
       fontSize: 18,
-      fontWeight: 500,
+      fontWeight: '500',
       color: '#474747',
     },
     PrayContent: {
       fontSize: 18,
-      fontWeight: 400,
+      fontWeight: '400',
     },
     prayTitleView: {
       width: '90%',
@@ -101,13 +108,13 @@ const styles = width =>
     },
     nextText: {
       fontSize: 15,
-      fontWeight: 400,
+      fontWeight: '400',
       color: '#000000',
       marginLeft: 15,
     },
     nextText1: {
       fontSize: 15,
-      fontWeight: 400,
+      fontWeight: '400',
       color: '#949494',
       marginRight: 15,
     },
@@ -146,11 +153,12 @@ const styles = width =>
     },
     titleText: {
       fontSize: 18,
-      fontWeight: 500,
+      fontWeight: '500',
     },
   });
 
-const Pray = () => {
+const Pray = ({navigation}) => {
+  console.log(navigation.navigate.number);
   const getWidthSize = (main, sub) => {
     const width = (main / sub) * 100;
     return width + '%';
@@ -158,7 +166,9 @@ const Pray = () => {
   return (
     <View style={styles().Wrapper}>
       <View style={styles().titleView}>
-        <Image source={mainNext} style={styles().mainNext}></Image>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Image source={mainNext} style={styles().mainNext}></Image>
+        </TouchableOpacity>
         <Text style={styles().titleText}>혼자 기도</Text>
       </View>
       <View>

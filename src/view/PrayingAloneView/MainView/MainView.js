@@ -4,11 +4,11 @@ import React from 'react';
 import Header from '../../../components/PrayingAlone/common/Header/Header.js';
 import Footer from '../../../components/PrayingAlone/common/Footer/Footer.js';
 
-const MainView = () => {
+const MainView = ({navigation}) => {
   return (
     <SafeAreaView>
-      <Header />
-      <Main />
+      <Header navigation={navigation} />
+      <Main navigation={navigation} />
       <Footer />
     </SafeAreaView>
   );

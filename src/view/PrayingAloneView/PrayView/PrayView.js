@@ -5,10 +5,10 @@ import Pray from '../../../components/PrayingAlone/Pray/Pray';
 
 const styles = StyleSheet.create({});
 
-const PrayView = () => {
+const PrayView = ({navigation}) => {
   return (
     <SafeAreaView>
-      <Pray />
+      <Pray navigation={navigation} />
     </SafeAreaView>
   );
 };

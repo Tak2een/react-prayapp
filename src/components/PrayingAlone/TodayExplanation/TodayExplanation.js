@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 import Explanation from '../assets/img/explanation.png';
 import Title from '../common/Title/Title';
 
@@ -45,7 +45,7 @@ const Styles = StyleSheet.create({
   },
 });
 
-const TodayExplanation = () => {
+const TodayExplanation = ({navigation}) => {
   return (
     <View style={Styles.MainContainer}>
       <Title text="묵주기도 설명서" width={146} />
@@ -53,9 +53,11 @@ const TodayExplanation = () => {
         <View style={Styles.Wrapper}>
           <Image source={Explanation} style={Styles.Image} />
         </View>
-        <View style={Styles.Btn}>
+        <TouchableOpacity
+          style={Styles.Btn}
+          onPress={() => navigation.navigate('Today')}>
           <Text style={Styles.BtnText}>혼자기도 시작하기</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );

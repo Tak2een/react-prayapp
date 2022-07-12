@@ -6,11 +6,11 @@ import List from '../../../components/PrayingAlone/List/List';
 
 const styles = StyleSheet.create({});
 
-const ListView = () => {
+const ListView = ({navigation}) => {
   return (
     <SafeAreaView>
-      <Header />
-      <List />
+      <Header navigation={navigation} />
+      <List navigation={navigation} />
       <Footer />
     </SafeAreaView>
   );

@@ -6,11 +6,11 @@ import TodayExplanation from '../../../components/PrayingAlone/TodayExplanation/
 
 const styles = StyleSheet.create({});
 
-const TodayExplanationView = () => {
+const TodayExplanationView = ({navigation}) => {
   return (
     <SafeAreaView>
-      <Header />
-      <TodayExplanation />
+      <Header navigation={navigation} />
+      <TodayExplanation navigation={navigation} />
       <Footer />
     </SafeAreaView>
   );
